@@ -1,0 +1,38 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.clearfix {
+	clear: both;
+}
+
+#crosshair {
+	position: absolute;
+	z-index: 1000;
+}
+
+#crosshair img {
+	width: 17px;
+	height: 17px;
+}
+
+#map-status {
+	text-align: right;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 90%;
+	background-color: #2f3640;
+	color: #f5f6fa;
+}
+
+#center-status {
+	float: left;
+}
+
+#cursor-status {
+	float: right;
+}

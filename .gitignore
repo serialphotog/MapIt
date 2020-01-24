@@ -1,0 +1,3 @@
+# Node's nonsense
+node_modules/*
+npm-debug.log
