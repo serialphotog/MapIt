@@ -23,11 +23,13 @@ export var streets = L.tileLayer(mapboxUrl, {id: 'mapbox.streets', maxZoom: 19, 
 export var lidarAttrib = 'Kentucky Division of Geographic Information (DGI)';
 export var lidar = L.tileLayer.wms('https://kyraster.ky.gov/arcgis/services/ElevationServices/Ky_DEM_KYAPED_5FT_ShadedRelief_WGS84WM/ImageServer/WMSServer', {
 	layers: '0',
-	attribution: lidarAttrib
+	attribution: lidarAttrib,
+	maxZoom: 19
 });
 export var lidarMulti = L.tileLayer.wms('https://kyraster.ky.gov/arcgis/services/ElevationServices/Ky_DEM_KYAPED_5FT_MultiDirectionalHillshade/ImageServer/WMSServer', {
 	layers: '0',
-	attribution: lidarAttrib
+	attribution: lidarAttrib,
+	maxZoom: 19
 });
 export var kyapd6 = L.tileLayer.wms('https://kyraster.ky.gov/arcgis/services/ImageServices/Ky_KYAPED_2019_6IN/ImageServer/WMSServer', {
 	layers: '0',
