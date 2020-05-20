@@ -12,9 +12,10 @@ function setCrossHair(mapDiv : string, xhairDiv: string) {
 
 // Handles the resize of the UI
 export function handleResize() {
+	var toolbarHeight = document.getElementById('toolbar').clientHeight;
 	var statusHeight = document.getElementById('map-status').clientHeight;
 	var viewportHeight = window.innerHeight;
-	document.getElementById('map-view').style.height = viewportHeight - statusHeight + "px";
+	document.getElementById('map-view').style.height = viewportHeight - statusHeight - toolbarHeight + "px";
 
 	// Set the cross hair position
 	setCrossHair("map-view", "crosshair");

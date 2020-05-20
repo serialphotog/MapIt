@@ -8,7 +8,7 @@
   },
   "author": "Adam Thompson <adam@serialphotog.com>",
   "license": "MIT",
-   "devDependencies": {
+  "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^8.0.0",

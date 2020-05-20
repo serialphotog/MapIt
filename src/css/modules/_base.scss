@@ -29,6 +29,23 @@ html, body {
 	color: #f5f6fa;
 }
 
+#toolbar {
+	padding: 10px;
+	font-weight: bold;
+	font-size: 90%;
+	background-color: #2f3640;
+	color: #f5f6fa;
+
+	a {
+		color: #f5f6fa;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 #center-status {
 	float: left;
 }
