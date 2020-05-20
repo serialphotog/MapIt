@@ -29,6 +29,11 @@ export var lidarMulti = L.tileLayer.wms('https://kyraster.ky.gov/arcgis/services
 	layers: '0',
 	attribution: lidarAttrib
 });
+export var kyapd6 = L.tileLayer.wms('https://kyraster.ky.gov/arcgis/services/ImageServices/Ky_KYAPED_2019_6IN/ImageServer/WMSServer', {
+	layers: '0',
+	attribution: lidarAttrib,
+	maxZoom: 25
+});
 
 export var baseLayers = {
 	"CalTopo": calTopo,
@@ -38,6 +43,7 @@ export var baseLayers = {
 	"U.S. Topo": usTopo,
 	"National Geo": natGeo,
 	"Streets": streets,
+	"KYAPD 6": kyapd6,
 	"Lidar": lidar,
 	"Lidar (MultiDirectional)": lidarMulti
 };
